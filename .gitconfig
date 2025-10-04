@@ -1,0 +1,21 @@
+[core]
+  editor = vi
+  excludesfile = ~/.gitignore-global
+  autocrlf = input
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+[init]
+    defaultBranch = main
+[gpg]
+    format = ssh
+[gpg "ssh"]
+    defaultKeyCommand = ssh-add -L
+[commit]
+    gpgsign = true
+[credential]
+    helper = store # TODO replace this with secret-tool
+[pull]
+	rebase = true
